@@ -1,0 +1,4 @@
+app/code/community/Ffuenf/TrustedShopsStars                          app/code/community/Ffuenf/TrustedShopsStars
+app/design/frontend/base/default/layout/ffuenf_trustedshopsstars.xml app/design/frontend/base/default/layout/ffuenf_trustedshopsstars.xml
+app/design/frontend/base/default/template/ffuenf/trustedshopsstars   app/design/frontend/base/default/template/ffuenf/trustedshopsstars
+app/etc/modules/Ffuenf_TrustedShopsStars.xml                         app/etc/modules/Ffuenf_TrustedShopsStars.xml

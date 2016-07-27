@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_TrustedShopsStars extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2016 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <sections>
+        <ffuenf_trustedshopsstars translate="label" module="ffuenf_trustedshopsstars">
+            <tab>ffuenf</tab>
+            <label>TrustedShopsStars</label>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <teaser translate="label" module="ffuenf_trustedshopsstars">
+                    <frontend_model>Ffuenf_TrustedShopsStars_Block_Adminhtml_System_Config_Fieldset_Teaser</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                </teaser>
+                <general translate="label" module="ffuenf_trustedshopsstars">
+                    <label>General Configuration</label>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable>
+                    </fields>
+                </general>
+                <api translate="label" module="ffuenf_trustedshopsstars">
+                    <label>Api Configuration</label>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <tsId translate="label" module="ffuenf_trustedshopsstars">
+                            <label>tsId</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </tsId>
+                        <cacheTimeOut translate="label" module="ffuenf_trustedshopsstars">
+                            <label>cacheTimeOut</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cacheTimeOut>
+                        <cron_expr translate="label" module="ffuenf_trustedshopsstars">
+                            <label>cron expression</label>
+                            <comment>Cron expressions. (E.g. "25 * * * *")</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cron_expr>
+                    </fields>
+                </api>
+                <data translate="label" module="ffuenf_trustedshopsstars">
+                    <label>Api Data</label>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>0</expanded>
+                    <fields>
+                        <ratingValue translate="label" module="ffuenf_trustedshopsstars">
+                            <label>ratingValue</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ratingValue>
+                        <bestRating translate="label" module="ffuenf_trustedshopsstars">
+                            <label>bestRating</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bestRating>
+                        <ratingCount translate="label" module="ffuenf_trustedshopsstars">
+                            <label>ratingCount</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ratingCount>
+                    </fields>
+                </data>
+                <log translate="label, comment" module="ffuenf_common">
+                    <label>Logging Configuration</label>
+                    <comment><![CDATA[Enable the logging functions for debugging purposes only]]></comment>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>0</expanded>
+                    <fields>
+                        <enable translate="label, comment" module="ffuenf_common">
+                            <label>Enable system logging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable>
+                        <profile_enable translate="label, comment" module="ffuenf_common">
+                            <label>Enable profile logging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </profile_enable>
+                        <exception_enable translate="label, comment" module="ffuenf_common">
+                            <label>Enable exception logging</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </exception_enable>
+                    </fields>
+                </log>
+            </groups>
+        </ffuenf_trustedshopsstars>
+    </sections>
+</config>

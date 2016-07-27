@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_TrustedShopsStars extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2016 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Ffuenf_TrustedShopsStars>
+            <version>1.0.0</version>
+        </Ffuenf_TrustedShopsStars>
+    </modules>
+    <global>
+        <helpers>
+            <ffuenf_trustedshopsstars>
+                <class>Ffuenf_TrustedShopsStars_Helper</class>
+            </ffuenf_trustedshopsstars>
+        </helpers>
+        <blocks>
+            <ffuenf_trustedshopsstars>
+                <class>Ffuenf_TrustedShopsStars_Block</class>
+            </ffuenf_trustedshopsstars>
+        </blocks>
+        <models>
+            <ffuenf_trustedshopsstars>
+                <class>Ffuenf_TrustedShopsStars_Model</class>
+            </ffuenf_trustedshopsstars>
+        </models>
+        <resources>
+            <ffuenf_trustedshopsstars_setup>
+                <setup>
+                    <module>Ffuenf_TrustedShopsStars</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </ffuenf_trustedshopsstars_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ffuenf_trustedshopsstars>
+                    <file>ffuenf_trustedshopsstars.xml</file>
+                </ffuenf_trustedshopsstars>
+            </updates>
+        </layout>
+    </frontend>
+    <crontab>
+        <jobs>
+            <ffuenf_trustedshopsstars>
+                <schedule>
+                    <config_path>ffuenf_trustedshopsstars/api/cron_expr</config_path>
+                </schedule>
+                <run>
+                    <model>ffuenf_trustedshopsstars/cron::getRating</model>
+                </run>
+            </ffuenf_trustedshopsstars>
+        </jobs>
+    </crontab>
+    <default>
+        <ffuenf_trustedshopsstars>
+            <general>
+                <enable>1</enable>
+            </general>
+            <api>
+                <tsId></tsId>
+                <cacheTimeOut>43200</cacheTimeOut>
+                <cron_expr>15 4 * * *</cron_expr>
+            </api>
+        </ffuenf_trustedshopsstars>
+    </default>
+    <uninstall>
+        <filename>uninstall.txt</filename>
+    </uninstall>
+    <phpunit>
+        <suite>
+            <modules>
+                <Ffuenf_TrustedShopsStars/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

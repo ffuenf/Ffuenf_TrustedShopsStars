@@ -1,0 +1,2 @@
+app/code/community/Ffuenf/TrustedShopsStars
+app/etc/modules/Ffuenf_TrustedShopsStars.xml

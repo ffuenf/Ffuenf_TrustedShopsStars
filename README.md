@@ -4,13 +4,13 @@ Ffuenf_TrustedShopsStars
 ========================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_TrustedShopsStars.svg)][tag]
 [![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_TrustedShopsStars.svg)][travis]
-[![VersionEye](https://www.versioneye.com/user/projects//badge.svg)][versioneye]
+[![VersionEye](https://www.versioneye.com/user/projects/57989ae674848d00341d9bd1/badge.svg)][versioneye]
 [![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_TrustedShopsStars/badges/quality-score.png)][code_quality]
 [![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_TrustedShopsStars/badges/coverage.png)][code_coverage]
 [![PayPal Donate](https://img.shields.io/badge/paypal-donate-blue.svg)][paypal_donate]
 [tag]: https://github.com/ffuenf/Ffuenf_TrustedShopsStars
 [travis]: https://travis-ci.org/ffuenf/Ffuenf_TrustedShopsStars
-[versioneye]: https://www.versioneye.com/user/projects/
+[versioneye]: https://www.versioneye.com/user/projects/57989ae674848d00341d9bd1
 [code_quality]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_TrustedShopsStars
 [code_coverage]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_TrustedShopsStars
 [paypal_donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J2PQS2WLT2Y8W&item_name=Magento%20Extension%3a%20Ffuenf_TrustedShopsStars&item_number=Ffuenf_TrustedShopsStars&currency_code=EUR
