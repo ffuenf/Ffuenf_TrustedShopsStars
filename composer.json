@@ -1,0 +1,33 @@
+{
+  "name": "Ffuenf/Ffuenf_TrustedShopsStars",
+  "license": "MIT",
+  "description": "This is a extension for Magento Community Edition that integrates the rich snippet meta data for displaying TrustedShops customer reviews and stars in the google organic search results. See  [So zeigen Sie Sterne in Google mit Trusted Shops Kundenbewertungen an – kostenlos!](http://www.trustedshops.de/shop-info/zeigen-sie-sterne-google-mit-trusted-shops-kundenbewertungen-kostenlos/).",
+  "authors": [
+    {
+      "name": "Achim Rosenhagen",
+      "email": "a.rosenhagen@ffuenf.de"
+    }
+  ],
+  "type": "magento-module",
+  "require": {
+    "Ffuenf/Ffuenf_Common": "*",
+    "Ffuenf/Ffuenf_MageTrashApp": "*"
+  },
+  "require-dev": {
+    "aoepeople/composer-installers": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.firegento.com"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ffuenf/Ffuenf_Common"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ffuenf/Ffuenf_MageTrashApp"
+    }
+  ]
+}
