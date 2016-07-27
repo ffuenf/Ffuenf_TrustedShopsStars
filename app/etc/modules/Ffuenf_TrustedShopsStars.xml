@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Ffuenf_TrustedShopsStars>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Ffuenf_Common />
+            </depends>
+        </Ffuenf_TrustedShopsStars>
+     </modules>
+</config>
